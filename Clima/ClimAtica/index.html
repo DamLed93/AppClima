@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>ClimAtika</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" >
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script defer src="weather.js"></script>
+        <link rel="stylesheet" href="clima.css" >
+    </head>
+    
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper light-blue darken-2">
+                <a href="#" class="brand-logo center">ClimAtika</a>
+                    <ul class="right">
+                        <li>
+                            <a href="#"><i class="material-icons" id="refrescar">refresh</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+            <div class="col s11 m5">
+                    <img src="images/soleado.png" id="imagen" style="display:inline" width="40px" />
+                    <h4 class="header" id="ciudad" style="display: inline">Ciudad</h4>
+                    <div class="card horizontal large z-depth-3 col s10">
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h4><strong>El clima ahora</strong></h4>
+                            <h4></h4>
+                            <h5 id="temperatura">--° C</h5>
+                            <h5 id="humedad">--%</h5>
+                            <h5 id="presion">-- hPa</h5>
+                            <h5 id="viento">-- Km/h </h5>
+                            <h4><strong>Pronóstico para hoy</strong></h4>
+                            <h5 id="descripcion">--</h5>
+                            <h5 id="minimax">--° C</h5>
+                        </div>
+                        <div style="display:block;text-align:center">
+                            <div id="rueda" class="preloader-wrapper medium active">
+                                <div class="spinner-layer spinner-blue-only">
+                                    <div class="circle-clipper left">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="gap-patch">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="circle-clipper right">
+                                        <!-- Se agrega opciones para elegir el lugar a obtener clima -->
+                                       <!--  <form action="" method="POST" class="obtenerDatosDelClima">
+                                            <input type="text" name="city" id="city">
+                                            <select name="" id="country">
+                                                <option disabled select value="">Selecciona tu ubicacion</option>
+                                                <option value="AR">Argentina</option>
+                                                <option value="US">Estados Unidos</option>
+                                                <option value="MX">Mexico</option>
+                                                <option value="ES">España</option>
+                                                <option value="BR">Brasil</option>
+                                            </select>
+                                            <input type="submit" name ="" id="" value="obtenerDatosDelClima">
+                                        </form> -->
+                                        <div class="circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <h6 style="display:inline"><b>Última actualización:</b></h6>
+                <p id="actualizacion" style="display:inline" > 21-01-2019 13:45 hs.</p>
+                
+        </div>
+    </body>
+</html>
